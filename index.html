@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur QR code</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Générateur QR code</h1>
+      <div class="input">
+        <input type="text" id="id_input" placeholder="colle ton lien ici" />
+        <label class="file-drop" id="drop-zone">
+          <span>Glisse ton pdf ici</span>
+          <input type="file" id="file-input" accept=".pdf" hidden />
+        </label>
+      </div>
+      <button id="boutonGenerer">Générer</button>
+      <div class="resultat" id="result">
+        <div class="qr" id="qrgenere"></div>
+      </div>
+      <button id="telecharger">télécharger</button>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
